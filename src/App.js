@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
 import PostPresenter from './components/PostList';
-import AddPost from './components/Post';
+import CreatePostForm from './components/CreatePostForm';
 import './index.css';
 
 function App() {
 
-  const [entries, setEntries] = useState([{name:"Alec", post:"I like Pizza", date:"01-10-2023"}, {name:"Trenton", post:"Me too, but with mushrooms", date:"01-10-2023"}, {name:"Maddie", post:"I just got a new Kitty", date:"01-14-2023"}])
+  const [posts, setPosts] = useState([{name:"alek", post:"yoo\ngreetings from vienna", date:"01-19-2023"}, {name:"hootie", post:"Everything is awesome: Don't forget the Lego - Tagg - 2019 - Journal of Paediatrics and Child Health - Wiley Online Library\nhttps://onlinelibrary.wiley.com/doi/full/10.1111/jpc.14309", date:"01-26-2023"}, {name:"snake", post:"What's hew\nNew\nI keep forgetting to drop in here", date:"01-18-2023"}, {name:"helli", post:"I'll go if Emma goes", date:"01-02-2023"}, {name:"gamein", post:"Dude midsommar", date:"01-22-2023"}])
 
-  function addNewEntry(entry){
-    let tempEntries =[...entries, entry];
-    setEntries(tempEntries);
+  function addNewPost(post){
+    let tempPosts =[...posts, post];
+    setPosts(tempPosts);
   }
 
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>SocialFeed</p>
+        <p>IdeaBulb</p>
       </header>
       <div>
-        <PostPresenter parentEntries={entries} />
+        <PostPresenter posts={posts} />
         <h2>Got thoughts?</h2>
-        <h3>Create a post. Your friends will see it in their feed.</h3>
-        <AddPost addNewEntryProperty={addNewEntry} />
+        <h3>Share an idea. Your friends will see it in their feed.</h3>
+        <CreatePostForm addNewPostItem={addNewPost} />
       </div>
     </div>
   );
