@@ -9,7 +9,7 @@ const CreatePostForm = (props) => {
     const [date, setDate] = useState('');
 
     function handleSubmit(event){
-        event.preventDefault();
+        // event.preventDefault
         
         let newPost = {
             name: name,

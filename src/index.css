@@ -67,14 +67,15 @@ ul {
 }
 
 .active{
-  background-color:green;
+  background-color:yellow;
   fill:white;
-  border-color:green;
-  border-radius:25px;
 }
 
 .inactive{
-  color: black;
-  border-radius: 25px;
-  border-color:white;
+  fill:white;
+}
+button{
+  shape-outside: content-box;
+  content:normal;
+  background-color: inherit;
 }

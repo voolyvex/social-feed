@@ -6,7 +6,7 @@ const PostPresenter = (props) => {
     return (  
       <div>
   
-          {props.posts.map((post,index) => {
+          {props.posts.map((post) => {
             return (
              < Post post={post}/>
             );

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-
+import { BiBomb } from "react-icons/bi";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import "../index.css"
 
 const LikeDislikeButton = (props) => {
 
@@ -22,12 +24,12 @@ const LikeDislikeButton = (props) => {
     <div className="post-buttons">
     <div>
       <button onClick={handleClickLike}>
-      <img src="../resources/12_generated.jpg" alt="lightbulb button"/>
+      <HiOutlineLightBulb className ="active"  />
       </button>
     </div>
     <div>
       <button onClick={handleClickDislike}>
-        <img src="../resources/12_generated.jpg" alt="lightbulb button"/>
+        <BiBomb className= "inactive" />
       </button>
     </div>
   </div>
