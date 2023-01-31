@@ -58,10 +58,25 @@ html{
   align-items: center;
 }
 .post-button{
+  font: inherit;
   margin-inline: 1em;
   margin-block-end: auto;
   position: static;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
 }
+.post-button:hover {
+  text-decoration: underline;
+  background-color: rgb(122, 218, 189);
+  text-decoration-thickness: 3px;
+}
+
+.post-button:active {
+  background-color: rgb(92, 206, 178);
+  box-shadow: 2px 5px #666;
+  transform: translateY(4px);
+}
+
 form {
   color: white;
 }
