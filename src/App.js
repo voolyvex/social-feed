@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import PostPresenter from './components/PostList';
 import CreatePostForm from './components/CreatePostForm';
+import {GoLightBulb} from 'react-icons/go';
 import './index.css';
+import { BiBomb } from 'react-icons/bi';
+
 
 function App() {
 
@@ -14,15 +17,23 @@ function App() {
 
   return (
     <div className='App'>
-      <header className='App-header'>
-        <p>IdeaBulb</p>
+      <header className='title-gradient-box'>
+        <div className='title-text-box'>IdeaBulb</div>
       </header>
-      <div>
-        <PostPresenter posts={posts} />
-        <h2>Got thoughts?</h2>
-        <h3>Share an idea. Your friends will see it in their feed.</h3>
+      <body className='post-backdrop'>
+        <div className='create-post-container'>
+          <h2>Got thoughts? </h2>
+          <GoLightBulb className='logo-icon'/>
+          <h3>Share an idea.</h3>
+          <h3>Your friends will love it. Or not! </h3>
+          <BiBomb className='logo-icon-2'/>
+        </div>
         <CreatePostForm addNewPostItem={addNewPost} />
-      </div>
+        <PostPresenter posts={posts} />
+      </body>
+      <footer>
+        <p>&copy; 2023 IdeaBulb</p>
+      </footer>
     </div>
   );
 }

@@ -4,11 +4,11 @@ import Post from "./Post"
 
 const PostPresenter = (props) => {
     return (  
-      <div>
+      <div className="post-feed">
   
           {props.posts.map((post) => {
             return (
-             < Post post={post}/>
+             <Post post={post}/>
             );
           })}
       </div>

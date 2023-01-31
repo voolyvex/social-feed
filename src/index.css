@@ -1,81 +1,150 @@
-.App {
-  text-align: center;
-  background-color: rgb(81, 104, 168);
-  min-height: 100em;
+html{
+  background: linear-gradient(to top, black, white);
 }
-
-.App-header {
-  text-align: left;
-  background-color: darkgrey;
-  min-height: 4vh;
-  max-height: 4vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(8px + 2vmin);
-  color: navajowhite;
-  padding: 1em;
-  box-shadow: 3px 3px 7px lightgray;
+.App{
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.border-box {
-  background-color:white;
-  margin:2rem;
-  box-shadow: 4px 4px 8px grey;
-  border-radius: 25px;
-  padding: 20px;
-  text-decoration: none;
+.title-text-box {
+  padding-left: 2rem;
+  font-size: 3rem;
+  color: transparent;
+  display: inline;
+  text-shadow: 5vmax 4vmax .4vmax rgb(202, 202, 202);
+  scroll-behavior: smooth;
 
 }
-ul {
-  list-style-type: none;
+.title-gradient-box {
+  background: linear-gradient(to right, rgb(163, 214, 199), yellow);
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display:inline-block;
+  
+}
+.post-backdrop{
+  background: linear-gradient(to left, darkgrey, black);
+  border-style: hidden;
+  border-radius: 13px;
 }
 
-.create-button {
-  margin-top: 1rem;
-  border-radius: 25px;
-  border-style: none;
+.logo-icon{
+  height: 100%;
+  width: 10%;
+  align-self: center;
+  color: yellow;
+  margin: 5px;
+}
+.logo-icon-2{
+  height: 100%;
+  width: 12%;
+  align-self: center;
+  color: hotpink;
+  margin: 5px;
+}
+.create-post-container{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
-  background-color:#1867AB;
-  width: 7rem;
-}
+  display: flex;
+  align-items: center;
 
-.page {
-  background-color:#E2F2EE;
-  text-decoration: none;
 }
-
-.likeButton{
-  color: green;
-  padding: 15px 32px;
+.form-container{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.post-button{
+  margin-inline: 1em;
+  margin-block-end: auto;
+  position: static;
+}
+form {
+  color: white;
+}
+form.post{
+  margin-right: auto;
+}
+.post-feed{
+  margin-left: 28%;
+  margin-right: 20%;
+  padding-bottom: .5%;
+  display: grid;
+  align-content: center;
+}
+.post-container{
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color:rgb(216, 204, 181);
+  border-style: hidden;
+  border-radius: 24px;
+  margin: 10px;
+  width: 80%;
+  height: 95%;
+  background-color: darkslategray;
+  text-align: left;
+  padding-left: 3%;
+  background: linear-gradient(to left, lightgray,darkslategray);
+  box-shadow: -3px 1px 8px rgb(46, 46, 46), 3px -1px 8px rgb(56, 55, 55);
+}
+.user-name{
+  color: rgb(163, 214, 199);
+  height: 1rem;
+}
+button {
+  
+  min-width: 2.4rem;
+  max-width: 3rem;
+  min-height: 2.3rem;
+  max-height: 3 rem;
+  border-style: hidden;
+  border-radius: 4px;
+  box-shadow: 4px 6px 2px rgb(54, 49, 49);
+}
+.like-buttons {
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 50%;
-  margin-right: 170px;
-} 
-
-.dislikeButton{
-  color: red;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  width: 20%;
+}
+.button-container {
+  background-color: rgb(158, 144, 144);
+  opacity: 55%;
+  display: flex;
+ justify-content: center;
+}
+.bomb-active{
+  background-color: lightpink;
+  font-style: oblique;
+  font-size: small;
+}
+.bomb-inactive{
+  background-color: lightgray;
+  opacity: 45%;
+}
+.bulb-active {
+  background-color: rgb(231, 231, 39);
+  font-style: oblique;
+  font-size: small;
+}
+.bulb-inactive {
+  background-color: lightgray;
+  opacity: 45%;
 }
 
-.active{
-  background-color:yellow;
-  fill:white;
-}
+footer{
+  color: rgb(230, 220, 137);
+  font-family: inherit;
+  font-size: larger;
+  font-style: oblique;
+  margin-right: 1%;
+  display: flex;
+  justify-content:right;
+  position: static;
 
-.inactive{
-  fill:white;
-}
-button{
-  shape-outside: content-box;
-  content:normal;
-  background-color: inherit;
 }
