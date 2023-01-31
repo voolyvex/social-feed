@@ -28,8 +28,8 @@ const CreatePostForm = (props) => {
                 <input type='post' maxlength='300' value= {post} onChange={(e) => setPost(e.target.value)} />
                 <label> Date </label>
                 <input type='date' value= {date} onChange={(e) => setDate(e.target.value)} />
+                <button type='submit' className='post-button' >Post</button>
             </form>
-            <button className='post-button' type='submit'>Post</button>
         </div>
     );
 }
