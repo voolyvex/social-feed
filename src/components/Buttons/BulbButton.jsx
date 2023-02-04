@@ -5,7 +5,7 @@ const BulbButton = () => {
     const [bulbLit, setBulbLit] = useState(false)
 
     return (
-        <div classname="button-container">
+        <div className="button-container">
             <label>Like</label>
             <button className={bulbLit ? "bulb-active" : "bulb-inactive"} onClick={() => setBulbLit(!bulbLit)}>
             Bulb 

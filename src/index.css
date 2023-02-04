@@ -19,7 +19,6 @@ html{
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display:inline-block;
-  
 }
 .post-backdrop{
   background: linear-gradient(to left, darkgrey, black);
@@ -111,7 +110,6 @@ form.post{
   height: 1rem;
 }
 button {
-  
   min-width: 2.4rem;
   max-width: 3rem;
   min-height: 2.3rem;
@@ -127,12 +125,7 @@ button {
   position: relative;
   width: 20%;
 }
-.button-container {
-  background-color: rgb(158, 144, 144);
-  opacity: 55%;
-  display: flex;
- justify-content: center;
-}
+
 .bomb-active{
   background-color: lightpink;
   font-style: oblique;

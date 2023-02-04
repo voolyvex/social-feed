@@ -23,9 +23,9 @@ const CreatePostForm = (props) => {
         <div className='form-container'>
             <form onSubmit={handleSubmit}>
                 <label>Name </label>
-                <input type='name' maxlength='25'value= {name} onChange={(e) => setName(e.target.value)} />
+                <input type='name' maxLength='25'value= {name} onChange={(e) => setName(e.target.value)} />
                 <label> Post </label>
-                <input type='post' maxlength='300' value= {post} onChange={(e) => setPost(e.target.value)} />
+                <input type='post' maxLength='300' value= {post} onChange={(e) => setPost(e.target.value)} />
                 <label> Date </label>
                 <input type='date' value= {date} onChange={(e) => setDate(e.target.value)} />
                 <button type='submit' className='post-button' >Post</button>

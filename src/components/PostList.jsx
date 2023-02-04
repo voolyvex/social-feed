@@ -3,12 +3,14 @@ import Post from "./Post"
 
 
 const PostPresenter = (props) => {
+
+  const reverseFeed = [...props.posts].reverse()
     return (  
       <div className="post-feed">
   
-          {props.posts.map((post) => {
+          {reverseFeed.map((post, index) => {
             return (
-             <Post post={post}/>
+             <Post key={index} post={post}/>
             );
           })}
       </div>

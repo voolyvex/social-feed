@@ -20,7 +20,7 @@ function App() {
       <header className='title-gradient-box'>
         <div className='title-text-box'>IdeaBulb</div>
       </header>
-      <body className='post-backdrop'>
+      <div className='post-backdrop'>
         <div className='create-post-container'>
           <h2>Got thoughts? </h2>
           <GoLightBulb className='logo-icon'/>
@@ -30,7 +30,7 @@ function App() {
         </div>
         <CreatePostForm addNewPostItem={addNewPost} />
         <PostPresenter posts={posts} />
-      </body>
+      </div>
       <footer>
         <p>&copy; 2023 IdeaBulb</p>
       </footer>

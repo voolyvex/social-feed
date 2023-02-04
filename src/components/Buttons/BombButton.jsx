@@ -5,7 +5,7 @@ const BombButton = () => {
     const [bombLit, setBombLit] = useState(false)
 
     return (
-        <div classname="button-container">
+        <div className="button-container">
             <label>Dislike</label>
             <button className={bombLit ? "bomb-active" : "bomb-inactive"} onClick={() => setBombLit(!bombLit)}
             >Bomb 
